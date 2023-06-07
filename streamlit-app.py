@@ -8,9 +8,9 @@ st.write("Predicted Standings")
 
 # Display the predicted standings in a table
 table_data = {"Driver": [], "Predicted Standing": []}
-for driver, standing in sorted_results:
-    table_data["Driver"].append(driver)
-    table_data["Predicted Standing"].append(standing)
+for driver in ypred_lr:
+    table_data["Driver: "].append(driver)
+    
 
 st.table(table_data)
 
